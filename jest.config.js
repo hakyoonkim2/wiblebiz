@@ -13,4 +13,5 @@ export default {
   },
   rootDir: "./",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
+  setupFilesAfterEnv: ["<rootDir>/jest.setup.js"], // 파일 경로 맞게 수정
 };
