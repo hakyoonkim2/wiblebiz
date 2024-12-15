@@ -83,7 +83,7 @@ export const mswHandlers = [
       offset: 0,
       limit: 10,
       prevOffset: offset >= 10 ? offset - 10 : 0,
-      nextOffset: offset + 10 < totalLength - 1 ? offset + 10 : totalLength - 1,
+      nextOffset: offset + 10 < totalLength ? offset + 10 : 0,
     };
 
     return new HttpResponse(
