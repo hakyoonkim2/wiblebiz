@@ -1,0 +1,201 @@
+.heading-2 {
+  margin: var(--heading-2-margin);
+  font-size: var(--heading-2);
+  line-height: var(--line-height-sm);
+}
+
+.btn-xlg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8em;
+  height: var(--btn-xlg);
+  padding: 0 1em;
+  font-size: calc(1rem + 2px);
+  font-weight: 600;
+}
+.btn-xxlg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--btn-xxlg);
+  min-height: var(--btn-xxlg);
+  padding: 0 1.4em;
+  font-size: var(--btn-xxlg-size);
+  font-weight: 600;
+}
+.btn-xxlg > .ic {
+  width: var(--ic-lg);
+  height: var(--ic-lg);
+  margin-right: 8px;
+}
+.btn-xxlg > span {
+  line-height: var(--line-height-sm);
+}
+.btn-xxlg > span > em {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray-500);
+}
+.btn-primary {
+  background-color: var(--mint-900);
+  color: #fff;
+}
+.btn-secondary {
+  background-color: var(--midnight-900);
+  color: #fff;
+}
+.btn-tertiary {
+  background-color: #fff;
+  border: 1px solid var(--midnight-900);
+}
+
+i.ic {
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+i.ic.download {
+  background-image: url(../assets/ic_download.svg);
+}
+i.ic.write {
+  background-image: url(../assets/ic_write.svg);
+}
+i.ic.talk {
+  background-image: url(../assets/ic_talk.svg);
+}
+
+i.ic.process-1 {
+  background-image: url(../assets/ic_process01.svg);
+}
+i.ic.process-2 {
+  background-image: url(../assets/ic_process02.svg);
+}
+i.ic.process-3 {
+  background-image: url(../assets/ic_process03.svg);
+}
+i.ic.process-4 {
+  background-image: url(../assets/ic_process04.svg);
+}
+
+/* Inquiry Info */
+.inquiry-info {
+  display: flex;
+  margin: 0 calc(-1 * var(--space-md) / 2);
+}
+.inquiry-info > a {
+  flex: 1;
+  margin: 0 calc(var(--space-md) / 2);
+}
+.inquiry-info > a:not(:first-child) {
+}
+@media (max-width: 743px) {
+  .inquiry-info {
+    flex-direction: column;
+  }
+  .inquiry-info > a {
+    justify-content: flex-start;
+  }
+  .inquiry-info > a:not(:first-child) {
+    margin-top: 12px;
+  }
+}
+@media (min-width: 744px) and (max-width: 1023px) {
+  .inquiry-info {
+    flex-wrap: wrap;
+  }
+  .inquiry-info > a:last-child {
+    min-width: calc(100% - var(--space-md));
+    margin-top: var(--space-md);
+  }
+}
+
+/* Process Info */
+.process-info {
+  display: flex;
+  margin: 0 calc(-1 * var(--space-md) / 2);
+  counter-reset: li;
+  line-height: var(--line-height-sm);
+}
+.process-info > li {
+  flex: 1;
+  margin: 0 calc(var(--space-md) / 2);
+  padding: 0 24px;
+}
+.reduced .process-info {
+  margin: 0 -12px;
+}
+.reduced .process-info > li {
+  margin: 0 12px;
+  padding: 0 8px;
+}
+.process-info > li > .ic {
+  display: block;
+  width: var(--ic-xlg);
+  height: var(--ic-xlg);
+  margin-bottom: 8px;
+}
+.process-info > li > span {
+  position: relative;
+  display: block;
+}
+.process-info > li:not(:first-child) > span:before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: url(../assets/ic_step_arrow.svg) no-repeat;
+  background-size: auto 100%;
+}
+.process-info > li > span > strong {
+  display: block;
+  font-size: 18px;
+}
+.process-info > li > span > strong:before {
+  content: counter(li) ". ";
+  counter-increment: li;
+}
+.process-info > li > span > em {
+  display: block;
+  margin-top: 8px;
+  font-size: 16px;
+  color: var(--gray-700);
+}
+@media (max-width: 1023px) {
+  .process-info {
+    flex-direction: column;
+  }
+  .process-info > li {
+    display: flex;
+    padding: 0 !important;
+  }
+  .process-info > li:not(:first-child) > span:before {
+    display: none;
+  }
+}
+@media (max-width: 743px) {
+  .process-info > li:not(:first-child) {
+    margin-top: 20px;
+  }
+  .process-info > li > .ic {
+    margin: 0 12px 0 0;
+  }
+  .process-info > li > span > strong {
+    font-size: 16px;
+  }
+  .process-info > li > span > em {
+    margin-top: 4px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 744px) and (max-width: 1023px) {
+  .process-info > li:not(:first-child) {
+    margin-top: 24px;
+  }
+  .process-info > li > .ic {
+    margin: 0 16px 0 0;
+  }
+}

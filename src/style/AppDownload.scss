@@ -1,0 +1,104 @@
+/* App Info */
+.app-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 48px;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: var(--gray-10);
+}
+.app-info > h2 {
+  width: 100%;
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 24px;
+  line-height: var(--line-height-sm);
+}
+.app-info > h2 > em {
+  color: var(--mint-900);
+}
+.app-info > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 296px;
+  height: 60px;
+  margin: 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #fff;
+  border-radius: 8px;
+}
+.app-info > a:before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  margin-right: 4px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.app-info > a.gp:before {
+  background-image: url(../assets/logo_googleplay.svg);
+}
+.app-info > a.as:before {
+  background-image: url(../assets/logo_appstore.svg);
+}
+@media (max-width: 743px) {
+  .app-info {
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+  }
+  .app-info > h2 {
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+  .app-info > a {
+    width: 100%;
+    max-width: 264px;
+    height: 48px;
+    margin: 12px 0 0;
+    font-size: 14px;
+  }
+  .app-info > a:before {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (min-width: 744px) and (max-width: 1023px) {
+  .app-info > h2 {
+    margin-bottom: 24px;
+    font-size: 20px;
+  }
+  .app-info > a {
+    width: 264px;
+    height: 56px;
+    font-size: 14px;
+  }
+  .app-info > a:before {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .app-info {
+    margin-top: 64px;
+    padding: 40px;
+  }
+  .app-info > h2 {
+    margin-bottom: 32px;
+    font-size: 32px;
+  }
+  .app-info > a {
+    width: 392px;
+    height: 64px;
+    margin: 0 16px;
+    font-size: 18px;
+  }
+  .app-info > a:before {
+    width: 32px;
+    height: 32px;
+  }
+}

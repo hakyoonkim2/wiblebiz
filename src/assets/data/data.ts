@@ -1,6 +1,6 @@
-import { FAQList } from "../../type/type";
+import { Category, FAQItem } from "../../type/type";
 
-export const product: FAQList[] = [
+export const product: FAQItem[] = [
   {
     id: 38,
     categoryName: "도입문의",
@@ -19,7 +19,7 @@ export const product: FAQList[] = [
   },
 ];
 
-export const counseling: FAQList[] = [
+export const counseling: FAQItem[] = [
   {
     id: 134,
     categoryName: "도입문의",
@@ -30,7 +30,7 @@ export const counseling: FAQList[] = [
   },
 ];
 
-export const contract: FAQList[] = [
+export const contract: FAQItem[] = [
   {
     id: 135,
     categoryName: "도입문의",
@@ -41,7 +41,7 @@ export const contract: FAQList[] = [
   },
 ];
 
-export const signup: FAQList[] = [
+export const signup: FAQItem[] = [
   {
     id: 23,
     categoryName: "가입문의",
@@ -157,7 +157,7 @@ export const signup: FAQList[] = [
   },
 ];
 
-export const business: FAQList[] = [
+export const business: FAQItem[] = [
   {
     id: 106,
     categoryName: "비즈니스(업무용)",
@@ -285,7 +285,7 @@ export const business: FAQList[] = [
   },
 ];
 
-export const accident: FAQList[] = [
+export const accident: FAQItem[] = [
   {
     id: 99,
     categoryName: "사고/보험",
@@ -361,7 +361,7 @@ export const accident: FAQList[] = [
   },
 ];
 
-export const reservation: FAQList[] = [
+export const reservation: FAQItem[] = [
   {
     id: 39,
     categoryName: "예약/결제",
@@ -549,7 +549,7 @@ export const reservation: FAQList[] = [
   },
 ];
 
-export const vehicle: FAQList[] = [
+export const vehicle: FAQItem[] = [
   {
     id: 62,
     categoryName: "차량문의",
@@ -778,7 +778,7 @@ export const vehicle: FAQList[] = [
   },
 ];
 
-export const refuel: FAQList[] = [
+export const refuel: FAQItem[] = [
   {
     id: 90,
     categoryName: "충전",
@@ -853,7 +853,7 @@ export const refuel: FAQList[] = [
   },
 ];
 
-export const coupon: FAQList[] = [
+export const coupon: FAQItem[] = [
   {
     id: 122,
     categoryName: "쿠폰/기타",
@@ -910,5 +910,42 @@ export const coupon: FAQList[] = [
     question: "차량에서 이전 사용자의 분실물을 발견했어요.",
     answer:
       "<p><span style=\"font-size: '13pt'; color: rgba(106, 122, 135, 1); word-break: keep-all;\">이전 사용자의 소지품 발견 시 고객센터로 연락주시기 바랍니다.</span></p><p><span style=\"font-size: '13pt'; color: rgba(106, 122, 135, 1); word-break: keep-all;\">안전한 보관을 위해 해당 소지품은 글로브박스 혹은 트렁크에 보관 후 사진 촬영 부탁드립니다.</span></p>",
+  },
+];
+
+export const consultCategories: Category[] = [
+  { categoryID: "PRODUCT", name: "서비스 상품" },
+  { categoryID: "COUNSELING", name: "도입 상담" },
+  { categoryID: "CONTRACT", name: "계약" },
+];
+
+export const usageCategories: Category[] = [
+  {
+    categoryID: "SIGN_UP",
+    name: "가입문의",
+  },
+  {
+    categoryID: "BUSINESS",
+    name: "비즈니스(업무용)",
+  },
+  {
+    categoryID: "ACCIDENT",
+    name: "사고/보험",
+  },
+  {
+    categoryID: "RESERVATION",
+    name: "예약/결제",
+  },
+  {
+    categoryID: "VEHICLE",
+    name: "차량문의",
+  },
+  {
+    categoryID: "REFUEL",
+    name: "충전",
+  },
+  {
+    categoryID: "COUPON",
+    name: "쿠폰/기타",
   },
 ];
