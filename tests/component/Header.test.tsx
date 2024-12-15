@@ -4,7 +4,14 @@ import { MemoryRouter, Route, Routes } from "react-router-dom";
 import Header from "../../src/component/Header";
 
 describe("Header Component", () => {
-  afterEach(cleanup);
+  beforeEach(() => {
+    window.scrollTo = jest.fn();
+  });
+
+  afterEach(() => {
+    jest.restoreAllMocks();
+    cleanup();
+  });
 
   const renderWithRouter = (initialPath: string) => {
     return render(

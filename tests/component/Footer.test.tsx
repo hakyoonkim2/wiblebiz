@@ -3,7 +3,15 @@ import { render, fireEvent, cleanup } from "@testing-library/react";
 import Footer from "../../src/component/Footer";
 
 describe("Footer Component", () => {
-  afterEach(cleanup);
+  beforeEach(() => {
+    const scrollToMock = jest.fn();
+    window.scrollTo = scrollToMock;
+  });
+
+  afterEach(() => {
+    jest.restoreAllMocks();
+    cleanup();
+  });
 
   test("renders Footer component correctly", () => {
     // Footer 컴포넌트 렌더링
