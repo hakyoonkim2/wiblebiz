@@ -9,6 +9,7 @@ export default {
   transform: {
     "^.+\\.(ts|tsx|js|jsx)$": "ts-jest",
     "^.+\\.tsx?$": "babel-jest",
+    "^.+\\.scss$": "jest-css-modules-transform", // SCSS 파일 변환
   },
   rootDir: "./",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
