@@ -8,11 +8,13 @@
 (root)
 ├── .git/
 ├── src                             # 프로젝스 로직, 소스 구성
-│   └── api                         # static resource
+│   └── api                         # api
 │   └── assets                      # static resource
+│   └── mock                        # msw api
 │   └── component                   # UI Component
 │   └── router                      # SPA Router
 │   └── style                       # scss style
+│   └── type                        # type 정의
 ├── tests                           # Jest unit test 구성
 └── ...
 ```
@@ -23,3 +25,7 @@
 npm install
 npm run dev
 ```
+
+## 실행 화면
+
+![FAQ Project](./assets/screenshot.png)
