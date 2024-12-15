@@ -12,6 +12,7 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "types": ["msw", "jest"] // 각 tsconfig에서 MSW 타입 정의 사용
   }
 }
